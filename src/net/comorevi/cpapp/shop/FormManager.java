@@ -21,7 +21,7 @@ public class FormManager {
         StringBuilder content = new StringBuilder();
         content.append("合計金額/Sum price: ").append(OfficialShopPlugin.calculateSellPrice(itemMap)).append(MoneySAPI.UNIT).append("\n");
         itemMap.keySet().forEach(key -> {
-            content.append(" - ").append(SellItem.getById(key).getNameJpn()).append("/").append(SellItem.getById(key).getName()).append(": ").append(SellItem.getById(key).getPrice()).append("*").append(itemMap.get(key)).append(MoneySAPI.UNIT);
+            content.append(" - ").append(SellItem.getById(key).getNameJpn()).append("/").append(SellItem.getById(key).getName()).append(": ").append(SellItem.getById(key).getPrice()).append("*").append(itemMap.get(key)).append(MoneySAPI.UNIT).append("\n");
         });
         getSellItemConfirmForm(content.toString()).send(player, (targetPlayer, targetForm, data) -> {
             if (targetForm.getResponse().getClickedButtonId() == 0) {
