@@ -6,10 +6,13 @@ import java.util.LinkedList;
 import java.util.List;
 
 public enum SellItem {
-    STONE(Block.STONE, 0, "Stone", "焼き石", 5),
-    GRASS(Block.GRASS, 0, "Grass", "草", 5),
     DIRT(Block.DIRT, 0, "Dirt", "土", 2),
     COBBLE(Block.COBBLE, 0, "Cobble Stone", "丸石", 2),
+    PLANKS(Block.PLANK, 0, "Planks", "木材", 2),
+    WOOD(Block.WOOD, 0, "Wood", "原木", 5),
+    WOOD2(Block.WOOD2, 0, "Wood2", "原木2", 5),
+    SAND(Block.SAND, 0, "Sand", "砂", 2),
+    SANDSTONE(Block.SANDSTONE, 0, "SandStone", "砂岩", 3),
     UNKNOWN(-1, 0, "Unknown", "未設定", 1);
 
     private final int id;
