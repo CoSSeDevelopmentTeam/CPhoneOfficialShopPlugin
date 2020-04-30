@@ -1,0 +1,7 @@
+name: CPhoneOfficialShopPlugin
+main: net.comorevi.cpapp.shop.OfficialShopPlugin
+version: 1.0.0
+load: POSTWORLD
+author: popkechupki
+api: ["1.0.0"]
+description: "CPhoneOfficialShopのフェイクインベントリを利用した部分の実装プラグイン"
