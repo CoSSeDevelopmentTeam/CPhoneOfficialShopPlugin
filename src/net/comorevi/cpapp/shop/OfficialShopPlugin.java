@@ -1,6 +1,7 @@
 package net.comorevi.cpapp.shop;
 
 import cn.nukkit.Player;
+import cn.nukkit.block.BlockChest;
 import cn.nukkit.inventory.Inventory;
 import cn.nukkit.plugin.PluginBase;
 import cn.nukkit.utils.TextFormat;
@@ -44,6 +45,10 @@ public class OfficialShopPlugin extends PluginBase {
     }
 
     public void sendSellItemInventory(Player player) {
+        if (player.getLevel().getBlock(player.getLocation().up(2)) instanceof BlockChest) {
+            player.sendPopup(TextFormat.GRAY + "頭上にチェストがないところに移動してください。");
+            return;
+        }
         ChestFakeInventory fakeInventory = new ChestFakeInventory();
         fakeInventory.setName("アイテム買取/Sell Item");
         fakeInventory.addListener(this::onSlotChange);
