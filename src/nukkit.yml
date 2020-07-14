@@ -1,6 +1,6 @@
 name: CPhoneOfficialShopPlugin
 main: net.comorevi.cpapp.shop.OfficialShopPlugin
-version: 1.0.0
+version: 1.1.0
 load: POSTWORLD
 author: popkechupki
 api: ["1.0.0"]

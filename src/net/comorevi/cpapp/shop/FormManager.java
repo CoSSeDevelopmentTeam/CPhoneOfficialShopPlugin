@@ -2,7 +2,7 @@ package net.comorevi.cpapp.shop;
 
 import cn.nukkit.Player;
 import cn.nukkit.inventory.Inventory;
-import net.comorevi.moneyapi.MoneySAPI;
+import net.comorevi.np.moneys.MoneySAPI;
 import ru.nukkitx.forms.elements.ModalForm;
 
 import java.util.LinkedHashMap;
